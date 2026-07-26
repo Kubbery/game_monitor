@@ -1,0 +1,3 @@
+requests
+pytrends
+duckduckgo_search
