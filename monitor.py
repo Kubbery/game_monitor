@@ -4,11 +4,11 @@ from pytrends.request import TrendReq
 from duckduckgo_search import DDGS
 
 # ==================== 🛠️ 1. 用户配置区（请在此处填入你的 Key） ====================
-CONFIG = {
     # --- 企业微信应用配置 ---
-    "WECHAT_WORK_CORPID": "wwf849636e8641114a",      # 填入你的企业微信 CorpID (在企业微信后台“我的企业”最下方)
-    "WECHAT_WORK_SECRET": "AhhKp2hEztmihmXKxxhfCHrIEmC1n75t9tpxL0gzj4g",      # 填入创建的应用 Secret
-    "WECHAT_WORK_AGENTID": 1000002,                # 填入创建的应用 AgentId (整数，例如 1000002)
+CONFIG = {
+    "WECHAT_WORK_CORPID": os.getenv("WECHAT_WORK_CORPID"),
+    "WECHAT_WORK_SECRET": os.getenv("WECHAT_WORK_SECRET"),
+    "WECHAT_WORK_AGENTID": int(os.getenv("WECHAT_WORK_AGENTID", 0)),
 }
 
 # ==================== 📱 2. 企业微信推送模块 ====================
