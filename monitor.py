@@ -1,3 +1,4 @@
+import os          # 👈 加上这行，解决 NameError: name 'os' is not defined
 import requests
 import time
 from pytrends.request import TrendReq
